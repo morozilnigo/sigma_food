@@ -1,95 +1,160 @@
+/* Основные стили */
 body {
-    font-family: Arizonia sans-serif;
-    background-color: #C584F6;
-    color: #000;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #494646;
 }
 
 header {
-
-    background-color: #D7A4FF;
-    border-radius: 41px;
-    width: 1253px;
-    height: 165px;
-    padding-top: 20px;
-    
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.button {
-    
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-nav {
-   display: flex; 
-   justify-content: center;
-  margin-bottom: 30px;
-  margin-top: 20px;
-    
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Для корректного отображения подменю */
 }
 
-.nav-link {
+nav a {
+    color: white;
     text-decoration: none;
-     margin: 50px;
-     width: 179px;
-     height: 57px;
-     border-radius: 20px ;
-     background-color: #CF8FFF;
-     text-align: ;
-
-     padding: 7px;
-     
-     color: #000;
-     font-size: 30px;
-     font-family: Fascinate;
-
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-h1 {
-
-text-align: center;
-margin-top: 30px;
-margin-bottom: 30px;
-
-
+nav a:hover {
+    background-color: #5f5f5f;
 }
 
-p {
-    font-size: 20px;
+/* Стиль для выпадающего подменю */
+.menu-item:hover .submenu {
+    display: block; /* Показываем подменю при наведении */
+}
+
+.submenu {
+    display: none; /* Подменю скрыто по умолчанию */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #5f5f5f;
 }
 
 .catalog {
-   
-    display: flex; 
-   justify-content: center;
- background-color: #d7a4ff;
- border-radius: 64px;
- width: 1253px;
- height: 320px;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
-
 
 article {
-    margin: 20px;
-    background: #cf8fff;
-    border-radius: 29px;
-width: 139px;
-height: 256px;
-padding: 20px;
-
-   
+    background-color: rgb(111, 109, 109);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    will-change: transform;
 }
 
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
 
+article h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+article p {
+    font-size: 1em;
+    color: #777;
+}
 
 footer {
-    background-color: #d7a4ff;
-    width: 1253px;
-    height: 132px;
-    border-radius: 42px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+      .catalog {
+        grid-template-columns: 1fr 1fr;
+    }
+
+article:hover{
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+
+    .nav-link{
+transition: transform 0.2s ease, background-color 0.2s ease;
+    display: inline-block;
+    }
     
-   
 }
 
+.nav-link:hover {
+    transform: scale(1.1);
+    background-color: #5f5f5f;
+}
+#message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.95);
+    color: white;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    text-align: center;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
+#message.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
