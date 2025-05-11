@@ -1,75 +1,80 @@
-<html>
+<!DOCTYPE html>
+<script>
+    document.querySelector('.nav-link').addEventListener('click', function(e) {
+        e.preventDefault(); // не переходит по ссылке
+        document.getElementById('message').classList.add('show');
+    });
+</script>
+<div id="message" class="hidden">ТЫ УЖЕ ТУТ ЛОЛ</div>
+<html lang="ru">
     <head>
-        <title>Sigma food</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sigma Food - Онлайн-магазин вкусной еды">
+        <title>Sigma Food</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-           
-                  <h1>Sigma food</h1>
-                <nav><b>
-            <a class="nav-link" href="">главная</a>
-            <a class="nav-link" href="">тoвары</a>
-            <a class="nav-link" href="">контакты</a>
-          </b>
-        </nav>      
+            <h1>Sigma Food</h1>
+            <nav>
+                <ul>
+                    <li><a class="nav-link" href="#">Главная</a></li>
+                    <li class="menu-item">
+                        <a class="nav-link" href="#">Товары</a>
+                        <ul class="submenu">
+                            <li><a href="#">Курица</a></li>
+                            <li><a href="#">Бургер</a></li>
+                            <li><a href="#">Наггетсы</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="#">Контакты</a></li>
+                </ul>
+            </nav>      
         </header>
     
         <main>
-     
             <section class="catalog">
                 <article>
-                 
-                    <img src="https://learn.logikaschool.com/uploads/student/3542228/67cd746e807b7.png" width="73px" height="159px"/> 
-                      <h2>chicken</h2>
-                    <p>40 uah</p>
-                   
+                    <img src="https://learn.logikaschool.com/uploads/student/3542228/67cd746e807b7.png" alt="Курица" width="73px" height="159px"/>
+                    <h2>Курица</h2>
+                    <p>40 UAH</p>
                 </article>
 
                 <article>
-                 
-                    <img src="https://learn.logikaschool.com/uploads/student/3542228/67cd7464b597c.png" width="153px" height="122px"/> 
-                      <h2>burger</h2>
-                    <p>30 uah</p>
-                   
+                    <img src="https://learn.logikaschool.com/uploads/student/3542228/67cd7464b597c.png" alt="Бургер" width="153px" height="122px"/>
+                    <h2>Бургер</h2>
+                    <p>30 UAH</p>
                 </article>
-                                <article>
-                 
-                    <img src="https://learn.logikaschool.com/uploads/student/3542228/67cd761c71e8e.png" width="117px" height="168px"/> 
-                      <h2>nugget</h2>
-                    <p>20 uah</p>
-                   
+                
+                <article>
+                    <img src="https://learn.logikaschool.com/uploads/student/3542228/67cd761c71e8e.png" alt="Наггетсы" width="117px" height="168px"/>
+                    <h2>Наггетсы</h2>
+                    <p>20 UAH</p>
                 </article>
-                                <article>
-                 
-                    <img src="https://learn.logikaschool.com/uploads/student/3542228/67cd7620f2f09.png" width="147px" height="164px"/> 
-                      <h2>soda</h2>
-                    <p>30 uah</p>
-                   
-                </article>
-                                <article>
-                 
-                    <img src="https://learn.logikaschool.com/uploads/student/3542228/67cd762896b72.png" width="147px" height="144px"/> 
-                      <h2>french-fries</h2>
-                    <p>40 uah</p>
-                   
-                </article>
-                                <article>
-                 
-                    <img src="https://learn.logikaschool.com/uploads/student/3542228/67cd762d5ae75.png" width="147px" height="144px"/> 
-                      <h2>ice-cream</h2>
-                    <p>50 uah</p>
-                   
+                
+                <article>
+                    <img src="https://learn.logikaschool.com/uploads/student/3542228/67cd7620f2f09.png" alt="Сода" width="147px" height="164px"/>
+                    <h2>Кола</h2>
+                    <p>30 UAH</p>
                 </article>
 
+                <article>
+                    <img src="https://learn.logikaschool.com/uploads/student/3542228/67cd762896b72.png" alt="Картофель фри" width="147px" height="144px"/>
+                    <h2>Картофель фри</h2>
+                    <p>40 UAH</p>
+                </article>
 
-
+                <article>
+                    <img src="https://learn.logikaschool.com/uploads/student/3542228/67cd762d5ae75.png" alt="Мороженое" width="147px" height="144px"/>
+                    <h2>Мороженое</h2>
+                    <p>50 UAH</p>
+                </article>
             </section>
-            
         </main>
+        
         <footer>
-          
-            <p><b>+88005553535</b></p> 
+            <p><b>+88005553535</b></p>
         </footer>
     </body>
 </html>
