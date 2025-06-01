@@ -101,7 +101,7 @@ article h2 {
 
 article p {
     font-size: 1em;
-    color: #777;
+    color: #464646;
 }
 
 footer {
@@ -143,18 +143,13 @@ transition: transform 0.2s ease, background-color 0.2s ease;
     justify-content: center;
     align-items: center;
     z-index: 999;
-    text-align: center;
     font-weight: bold;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 #message.show {
     visibility: visible;
     opacity: 1;
-}
-
-.hidden {
-    display: none;
 }
