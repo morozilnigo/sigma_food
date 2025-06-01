@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff5722;
+    padding: 1em 2em;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 1.5em;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 4em 2em;
+    background: url('fastfood-bg.jpg') center/cover no-repeat;
+    color: rgb(0, 0, 0);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1em;
+    background: #ffc107;
+    padding: 0.8em 1.5em;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu {
+    padding: 3em 2em;
+    background: #fff;
+}
+
+.menu-items {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    width: 250px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about {
+    padding: 2em;
+    background: #ffe0b2;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+    background: #ff5722;
+    color: white;
+}
+
+
